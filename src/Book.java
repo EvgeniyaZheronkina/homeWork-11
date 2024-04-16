@@ -25,4 +25,23 @@ public class Book {
         this.year = year;
     }
 
+    public String toString() {
+        return "Название книги = " + this.title + "   " + this.author + "     Год издания = " + this.year;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null || this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return title.equals(book.title) && year == book.year && author.equals(book.author);
+    }
+
+    public int hasCode() {
+        return java.util.Objects.hash(title, author, year);
+    }
+
 }
