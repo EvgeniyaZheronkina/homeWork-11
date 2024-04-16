@@ -17,5 +17,10 @@ public class Main {
         System.out.println("Автор = " + author2.getName() + " " + author2.getSurname());
         System.out.println("Год издания = " + tyrgenev.getYear());
 
+        System.out.println(tolstoy);
+        System.out.println(tyrgenev);
+        System.out.println(author1.equals(author2));
+        System.out.println(tolstoy.equals(tyrgenev));
+
     }
 }
